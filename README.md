@@ -1,6 +1,9 @@
+Primeira aula.
 Projeto do jogo do número secreto.
 Projeto iniciado, primeiro comando  -  alert('Olá jinglebobs, Bem vindo ao jogo do número secreto');
-Usando variaveis.
+
+Segunda aula.
+Exibindo mensagens na tela, criando variaveis e executando um comando para encontrar a variavel.
 Usando a palavra let para escrever uma variavel.
 let numeroSecreto = 13;
 Escrevi uma variavel.
