@@ -3,7 +3,7 @@ let numeroSecreto = 13;
 let chute = prompt('Escolha um número entre 1 e 15');
 
 if (chute == numeroSecreto) {
-    alert ('Parabéns, você acertou o número secreto!');
+    alert (`Parabéns, você acertou o número secreto! ${numeroSecreto}`);
 } else {
     alert('Você errou o número secreto, tente novamente!');
 }
