@@ -36,7 +36,7 @@ Sexta aula.
 Ensinando instalar a extensão Live server no visual studio code.
 com essa extensão instalada, você não precisa atualizar a página toda vez que fizer uma alteração no seu código, será atualizado automaticamente.
 
-Adicionei alguns comentários e também desabilitei a função console.log para que os console.log não seja visto na página
+Adicionei alguns comentários e também desabilitei a função console.log para que os console.log não seja visto na página.
 Exemplo: console.log = function() {};
 Adicionei também parseInt para que o valor do chute não seja interpretado como uma string e sim como um número inteiro.
 parseInt serve para números inteiros e Number serve para números decimal.
