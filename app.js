@@ -1,5 +1,6 @@
 alert('Ola jinglebobs, Bem vindo ao jogo do número secreto');
 let numeroSecreto = 8;
+console.log ('o número secreto é 8');
 let chute = prompt('Escolha um número entre 1 e 15');
 
 // convertendo o prompt chute para número
