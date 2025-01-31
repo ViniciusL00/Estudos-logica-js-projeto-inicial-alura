@@ -16,7 +16,7 @@ Executando um comando para encontrar o número secreto.
 **Objetivo:** Comparar valores e tomar ações com base na comparação.
 **Exemplo:** Se o chute do jogador for igual ao número secreto, mostramos uma mensagem de parabéns.
 **Exemplo:** if (chute == númeroSecreto) {
- console.log ('Parabéns, você acertou o número secreto (8)';
+ console.log ('Parabéns, você acertou o número secreto (8))';
 }
 `Uma mensagem será exibida no console, que pode ser acessada no navegador em Inspecionar > Console`
 
@@ -24,7 +24,7 @@ Executando um comando para encontrar o número secreto.
 **Objetivo:** Else e comentarios.
 Melhorar a lógica de decisão com o uso do `else` e ​​adicionar `comentários`.
 else é uma palavra-chave que significa "senão" e é usada em conjunto com if para executar um bloco de código quando a condição do if for falsa.
-**Exemplo de `if/else`:** if (chute == numeroSecreto) { alert ('Parabéns você acertou o número secreto'); else { alert ('Você errou o número secreto, tente novamente');
+**Exemplo de `if/else`:** if (chute == numeroSecreto) { alert ('Parabéns você acertou o número secreto');} else { alert ('Você errou o número secreto, tente novamente');}
 **Comentários:** Comentários são usados ​​para facilitar a leitura do código para outros desenvolvedores e são ignorados pelo navegador.
 
 5- Quinta aula: Concatenação e Template Strings.
@@ -56,6 +56,7 @@ com essa extensão instalada, você não precisa atualizar a página toda vez qu
 Para isso, utilizamos o **loop `while`**. que repete o processo de uma condição até acertar a verdadeira.
 **Exemplo:** while (chute != numeroSecreto) {
     chute = prompt('Escolha um número entre 1 e 15');
+}
     
 A condição dentro do `while` verifica se o valor da variável `chute` é diferente (`!=`) do número secreto. Enquanto essa condição for verdadeira, o loop continuará executando.
 **Vale lembrar que:** toda parte do código que queira repetição do `while` tem que estar dentro da condição `while`.
@@ -80,5 +81,6 @@ Sempre que o chute for incorreto, maior ou menor que o número secreto, incremen
 `tentativas++;` Também deve ser incrementado dentro do comando `if` no comando alert.
 **Exemplo:** if (chute == numeroSecreto) {
             alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+}
 
 
