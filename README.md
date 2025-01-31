@@ -76,7 +76,7 @@ Sempre que o chute for incorreto, maior ou menor que o número secreto, incremen
 **Exemplo:** else {
                 alert(`O numero secreto é maior que ${chute}`);
             }
-            tentativas++;
+            **tentativas++;**
 `tentativas++;` Também deve ser incrementado dentro do comando `if` no comando alert.
 **Exemplo:** if (chute == numeroSecreto) {
             alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
