@@ -1,23 +1,32 @@
-alert('Ola jinglebobs, Bem vindo ao jogo do número secreto');
+alert('Olá seja bem-vindo ao jogo do número secreto');
 let numeroSecreto = 8;
-let chute = prompt('Escolha um número entre 1 e 15');
+console.log (numeroSecreto);
+let chute;
+let tentativas = 1;
 
-// Desabilitando a funcão console.log
-console.log = function() {}; // Isso faz com que o console.log não mostre nada
+// while / enquanto o chute não for igual ao numeroSecreto
+while (chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 15');
 
-console.log('valor do chute', chute); // Isso não aparecerá
-console.log('Resultado da comparação', chute == numeroSecreto); // Isso não aparecerá
-console.log('Valor do número secreto', numeroSecreto); // Isso não aparecerá
+        // Desabilitando a funcão console.log
+    console.log = function() {}; // Isso faz com que o console.log não mostre nada
 
-// convertendo o prompt chute para número
-chute = parseInt(chute); // Também pode ser usado Number(chute); para números decimal
+    console.log('valor do chute', chute); // Isso não aparecerá
+    console.log('Resultado da comparação', chute == numeroSecreto); // Isso não aparecerá
+    console.log('Valor do número secreto', numeroSecreto); // Isso não aparecerá
 
-if (chute == numeroSecreto) {
-    alert (`Parabéns, você acertou o número secreto! ${numeroSecreto}`);
-} else {
-    if (chute > numeroSecreto){
-        alert(`O numero secreto é menor que ${chute}`);
-    } else {
-        alert(`O numero secreto é maior que ${chute}`);
-    }
+        // convertendo o prompt chute para número
+        chute = parseInt(chute); // Também pode ser usado Number(chute); para números decimal
+
+        if (chute == numeroSecreto) {
+            alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+        } else {
+            if (chute > numeroSecreto){
+                alert(`O numero secreto é menor que ${chute}`); // um alerta para quando errar e dizer que o número é menor do que o escolhido
+            } else {
+                alert(`O numero secreto é maior que ${chute}`); // um alerta para quando errar e dizer que o número é maior do que o escolhido
+            }
+            // tentativas = tentativas +1;
+            tentativas++;
+        }
 }
