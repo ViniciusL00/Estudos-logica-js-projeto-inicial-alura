@@ -1,51 +1,84 @@
-Primeira aula.
-1- Projeto do jogo do número secreto.
-Projeto iniciado, primeiro comando  -  alert('Olá jinglebobs, Bem vindo ao jogo do número secreto');
+Descrição do Projeto.
+Este é um jogo simples de adivinhação, onde o usuário precisa tentar descobrir um número secreto gerado pelo sistema. O jogo fornece dicas sobre se o número escolhido pelo jogador é maior ou menor do que o número secreto.
 
-Segunda aula.
-2- Exibindo mensagens na tela, criando variaveis e executando um comando para encontrar a variavel.
-Usando a palavra let para escrever uma variavel.
-Exemplo: let numeroSecreto = 13;
-Escrevi uma variavel.
-Executando um comando para encontrar o número secreto
-Exemplo: prompt('Escolha um número entre 1 a 13');
+1- Primeira aula: Introdução ao Projeto.
+**Objetivo:** Criar o esqueleto básico do jogo. - **Comando Inicial:** Exibir uma mensagem de boas-vindas ao jogador.
+alert('Olá, seja bem-vindo ao jogo do número secreto');
 
-Terceira aula.
-3- Comparando variaveis
-Aprendendo condição
-Exemplo: if (chute == númeroSecreto) {
- console.log ('Parabéns, você acertou o número secreto (13)';
-} 
-para isso é preciso executar let chute = prompt ('Escolha um número entre 1 a 13');
-console.log irá exibir a mensagem se você acertar o número secreto (porém isso não aparecerá na tela).
-onde aparecerá a mensagem do console.log? (Inspecionar na página, na aba console) a mensagem só irá aparecer, caso acerte o número secreto, caso contrário não irá aparecer.
+2- Segunda Aula: Variáveis ​​e Entrada do Usuário.
+**Objetivo:** Criar variáveis ​​e coleta de entradas do usuário. - **Exemplo:** Definimos uma variável para o número secreto.
+**Exemplo:** let numeroSecreto = 8; 
+Coletamos a tentativa do usuário usando `prompt`.
+Executando um comando para encontrar o número secreto.
+**Exemplo:** let chute = prompt ('Escolha um número entre 1 a 15');
 
-Quarta aula.
-4- Else e comentarios
-Comentarios só é visto pelo desenvolvedor e para usar o comentário, Exemplo: //Aqui é um comentário. e o console.log é uma ferramenta usada para o desenvolvedor e não para o cliente.
+3- Terceira aula: Condições e Comparação de Valores.
+**Objetivo:** Comparar valores e tomar ações com base na comparação.
+**Exemplo:** Se o chute do jogador for igual ao número secreto, mostramos uma mensagem de parabéns.
+**Exemplo:** if (chute == númeroSecreto) {
+ console.log ('Parabéns, você acertou o número secreto (8)';
+}
+`Uma mensagem será exibida no console, que pode ser acessada no navegador em Inspecionar > Console`
+
+4- Quarta aula: Uso do `else` e ​​`Comentários`.
+**Objetivo:** Else e comentarios.
+Melhorar a lógica de decisão com o uso do `else` e ​​adicionar `comentários`.
 else é uma palavra-chave que significa "senão" e é usada em conjunto com if para executar um bloco de código quando a condição do if for falsa.
-Exemplo: if(chute == numeroSecreto) { alert ('Parabéns você acertou o número secreto'); else { alert ('Você errou o número secreto, tente novamente');
+**Exemplo de `if/else`:** if (chute == numeroSecreto) { alert ('Parabéns você acertou o número secreto'); else { alert ('Você errou o número secreto, tente novamente');
+**Comentários:** Comentários são usados ​​para facilitar a leitura do código para outros desenvolvedores e são ignorados pelo navegador.
 
-Quinta aula.
-5- Concatenação
-Template strings. isso é uma funcionalidade do JavaScript que permitem a criação de strings com expressões embutidas.
-Template strings usando crases, chaves e cifrão, Exemplo: `Parabéns você acertou o número secreto ${numeroSecreto}`.
+5- Quinta aula: Concatenação e Template Strings.
+**Objetivo:** Melhorar a formatação de mensagens com concatenação e template strings. 
+**Exemplo de Template String:** alert (`Parabéns você acertou o número secreto ${numeroSecreto}`);.
+Com o template strings, permite que você insira variáveis ​​diretamente na string, usando a sintaxe `${variavel}`.
 
-Sexta aula.
-6- Live server
+6- Sexta aula: Live Server.
+**Objetivo:** Usar o Visual Studio Code com a extensão Live Server para atualizar automaticamente o código no navegador.
 Ensinando instalar a extensão Live server no visual studio code.
 com essa extensão instalada, você não precisa atualizar a página toda vez que fizer uma alteração no seu código, será atualizado automaticamente.
 
-Adicionei alguns comentários e também desabilitei a função console.log para que os console.log não seja visto na página.
-Exemplo: console.log = function() {};
-Adicionei também parseInt para que o valor do chute não seja interpretado como uma string e sim como um número inteiro.
-parseInt serve para números inteiros e Number serve para números decimal.
-Exemplo: chute = parseInt (chute);
+**Melhorias no código:**
+**Ajustes realizados:**
 
-Sétima aula.
-7- Usei a condição maior > para dizer para o jogador quando ele errar o número secreto, tivesse uma dica se o número é maior ou menor do que ele escolheu
-Exemplo: if (chute > numeroSecreto){
+1- **Desabilitação do `console.log`:** Para evitar que perdas desnecessárias sejam aplicadas na página, desativei a função `console.log`. Isso foi feito da seguinte maneira: console.log = function() {};
+2 - **Conversão de valores com `parseInt`:** Ao receber o valor do chute, utilizei `parseInt` para garantir que o valor seja tratado como um número inteiro e não como uma string. Vale lembrar que: - `parseInt` é ideal para converter números inteiros. - Para números decimais, é mais adequado usar `Number`, **Exemplo de uso Number:** `chute = Number(chute);`, **Exemplo de uso parseInt:** `chute = parseInt(chute);`.
+
+7- Sétima aula: Adicionando dicas de **"maior" ou "menor":** 
+**Objetivo:** Para melhorar a interação com o usuário, implementei uma condição que avisa se o chute foi maior ou menor que o número secreto.
+**Exemplo:** if (chute > numeroSecreto){
         alert(`O numero secreto é menor que ${chute}`);
     } else {
         alert(`O numero secreto é maior que ${chute}`);
     }
+
+8- Oitava aula: Estruturas de Repetição.
+**Objetivo:** Repetir a interação até o usuário acertar o número secreto. O objetivo desta parte do código é permitir que o usuário continue tentando acertar o número secreto.
+Para isso, utilizamos o **loop `while`**. que repete o processo de uma condição até acertar a verdadeira.
+**Exemplo:** while (chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 15');
+    
+A condição dentro do `while` verifica se o valor da variável `chute` é diferente (`!=`) do número secreto. Enquanto essa condição for verdadeira, o loop continuará executando.
+**Vale lembrar que:** toda parte do código que queira repetição do `while` tem que estar dentro da condição `while`.
+
+**Operadores de Comparação:**
+(`!=` "Diferente")
+(`==` "Igual")
+(`>` "Maior")
+(`>=` "Maior ou igual")
+(`++` "Para atribuir mais 1")
+
+9- Nona aula: Tentativas.
+**Objetivo:** Mostrar ao usuario a quantidade de tentativas que ele teve até acertar o numeroSecreto, para isso utilizamos o operador `++` que incrementa o valor da variável `tentativas` em 1 a cada tentativa.
+**Como funciona:** - Cada vez que o usuário faz uma tentativa, o número de tentativas aumenta em 1 e é exibido na tela.
+**Exemplo:** `tentativas++;` ou `let tentativa = 1;` (caso queira iniciar com 1).
+**Onde adicionar o incremento de tentativas:** 1. - **Dentro do bloco `else`**.
+Sempre que o chute for incorreto, maior ou menor que o número secreto, incrementamos as tentativas.
+**Exemplo:** else {
+                alert(`O numero secreto é maior que ${chute}`);
+            }
+            **tentativas++;**
+`tentativas++;` Também deve ser incrementado dentro do comando `if` no comando alert.
+**Exemplo:** if (chute == numeroSecreto) {
+            alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+
+
