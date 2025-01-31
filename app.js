@@ -15,5 +15,9 @@ chute = parseInt(chute); // Também pode ser usado Number(chute); para números 
 if (chute == numeroSecreto) {
     alert (`Parabéns, você acertou o número secreto! ${numeroSecreto}`);
 } else {
-    alert(`Você errou o número secreto, o número secreto era ${numeroSecreto}, mas você escolheu ${chute}!`);
+    if (chute > numeroSecreto){
+        alert(`O numero secreto é menor que ${chute}`);
+    } else {
+        alert(`O numero secreto é maior que ${chute}`);
+    }
 }
