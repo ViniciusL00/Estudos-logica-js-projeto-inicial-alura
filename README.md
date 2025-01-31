@@ -41,3 +41,11 @@ Exemplo: console.log = function() {};
 Adicionei também parseInt para que o valor do chute não seja interpretado como uma string e sim como um número inteiro.
 parseInt serve para números inteiros e Number serve para números decimal.
 Exemplo: chute = parseInt (chute);
+
+Sétima aula.
+7- Usei a condição maior > para dizer para o jogador quando ele errar o número secreto, tivesse uma dica se o número é maior ou menor do que ele escolheu
+Exemplo: if (chute > numeroSecreto){
+        alert(`O numero secreto é menor que ${chute}`);
+    } else {
+        alert(`O numero secreto é maior que ${chute}`);
+    }
