@@ -67,7 +67,7 @@ A condição dentro do `while` verifica se o valor da variável `chute` é difer
 (`>=` "Maior ou igual")
 (`++` "Para atribuir mais 1")
 
-9- Nona aula: Tentativas
+9- Nona aula: Tentativas.
 **Objetivo:** Mostrar ao usuario a quantidade de tentativas que ele teve até acertar o numeroSecreto, para isso utilizamos o operador `++` que incrementa o valor da variável `tentativas` em 1 a cada tentativa.
 **Como funciona:** - Cada vez que o usuário faz uma tentativa, o número de tentativas aumenta em 1 e é exibido na tela.
 **Exemplo:** `tentativas++;` ou `let tentativa = 1;` (caso queira iniciar com 1).
