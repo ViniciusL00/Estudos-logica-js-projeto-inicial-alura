@@ -49,3 +49,12 @@ Exemplo: if (chute > numeroSecreto){
     } else {
         alert(`O numero secreto é maior que ${chute}`);
     }
+
+Oitava aula.
+8- Enquanto - while
+Enquanto o chute não for igual ao numeroSecreto quero que repita a interação para dar uma nova tentativa ao usuario.
+para que isso funcione corretamente é preciso fazer todas as interações dentro do while (){}.
+(não for igual é representado por !=)
+(o igual é representado por ==)
+(o maior é representado por >)
+(o maior ou igual é representado por >=)
