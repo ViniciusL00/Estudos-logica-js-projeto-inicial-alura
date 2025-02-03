@@ -145,3 +145,20 @@ Se tentativas > 1, a palavra será 'tentativas'.
 Se não, a palavra será 'tentativa'.
 
 Em vez de escrever uma estrutura if-else mais longa, você consegue a mesma funcionalidade de forma compacta e legível.
+
+12- Decima segunda aula: Math random.
+**Objetivo:** Math.random() – Gerando Números Aleatórios.
+O método Math.random() em JavaScript é utilizado para gerar números aleatórios. Ele retorna um valor decimal entre 0 (inclusive) e 1 (exclusivo).
+
+**Exemplo:** 
+let numeroAleatorio = Math.random();
+console.log(numeroAleatorio); // Exemplo de saída: 0.374251925346938
+
+**Gerando números em um intervalo específico:**
+Para gerar um número aleatório dentro de um intervalo personalizado, como de 1 a 10, você pode fazer da seguinte forma:
+let numero = Math.floor(Math.random() * 10) + 1;
+console.log(numero); // Exemplo de saída: 3 (número aleatório entre 1 e 10)
+
+1- Math.random() gera um número entre 0 e 1.
+2- Math.floor() arredonda para baixo, garantindo um número inteiro.
+3- O + 1 ajusta o intervalo para começar em 1.
