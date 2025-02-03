@@ -19,7 +19,7 @@ while (chute != numeroSecreto) {
         chute = parseInt(chute); // Também pode ser usado Number(chute); para números decimal
 
         if (chute == numeroSecreto) {
-            alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+            break; // interrompe o loop se o usuario acertar o numero secreto
         } else {
             if (chute > numeroSecreto){
                 alert(`O numero secreto é menor que ${chute}`); // um alerta para quando errar e dizer que o número é menor do que o escolhido
@@ -29,4 +29,10 @@ while (chute != numeroSecreto) {
             // tentativas = tentativas +1;
             tentativas++;
         }
+}
+
+if (tentativas > 1){
+    alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+}   
+ else { alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativa!`);
 }
