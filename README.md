@@ -83,4 +83,36 @@ Sempre que o chute for incorreto, maior ou menor que o número secreto, incremen
             alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
 }
 
+10 - Decima aula: Break
+**Objetivo:** Quando o usuário acertar o número secreto na primeira tentativa, a mensagem de alerta deve indicar "1 tentativa" ao invés de "1 tentativas".
+**Como funciona:** Utilizamos o comando `break;` dentro do loop `while`, logo após a verificação da condição de acerto (caso o número chutado seja igual ao número secreto). O `break;` irá interromper o loop imediatamente assim que o acerto acontecer.
 
+**Passo a passo**: 1- Verifique se o chute do usuário é igual ao número secreto.
+2- Caso o chute seja correto, o break; interrompe o loop, evitando que o contador de tentativas continue aumentando desnecessariamente.
+3- Caso o chute esteja errado, é exibido um alerta indicando se o número secreto é maior ou menor do que o valor informado.
+4- O número de tentativas é contado em uma variável separada.
+
+**Exemplo:**  while {
+    let chute = prompt("Digite o numero secreto:");
+    
+    if (chute == numeroSecreto) {
+        break; // Interrompe o loop se o usuário acertar o número secreto
+    } else {
+        if (chute > numeroSecreto) {
+            alert(`O número secreto é menor que ${chute}`); // Alerta quando o chute for maior
+        } else {
+            alert(`O número secreto é maior que ${chute}`); // Alerta quando o chute for menor
+        }
+    }
+    tentativas++; // Incrementa o número de tentativas a cada loop
+}
+
+// Exibição da mensagem final após o loop
+if (tentativas > 1) {
+    alert(`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
+} else {
+    alert(`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativa!`);
+}
+
+**Explicações importantes:** 1- O `break;` é utilizado dentro do loop while para parar a execução quando o número secreto for acertado.
+2- Fora do loop, usamos uma estrutura `if/else` para verificar o número de tentativas e exibir a mensagem correta, singular ou plural, de acordo com o número de tentativas realizadas.
