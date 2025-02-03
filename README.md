@@ -116,3 +116,32 @@ if (tentativas > 1) {
 
 **Explicações importantes:** 1- O `break;` é utilizado dentro do loop while para parar a execução quando o número secreto for acertado.
 2- Fora do loop, usamos uma estrutura `if/else` para verificar o número de tentativas e exibir a mensagem correta, singular ou plural, de acordo com o número de tentativas realizadas.
+
+11- Decima primeira aula: Operador ternário.
+O operador ternário é uma forma compacta de escrever uma estrutura condicional if-else. Ele é usado para simplificar a escrita de condições simples, tornando o código mais conciso.
+**Objetivo:**
+O objetivo do operador ternário é fazer uma escolha entre dois valores com base em uma condição. Ele é útil quando você deseja realizar uma verificação simples e atribuir um valor a uma variável ou executar uma ação dependendo de um teste condicional.
+**Explicação:**
+Condição: tentativas > 1
+O operador ternário verifica se o número de tentativas (tentativas) é maior que 1.
+
+Valor se verdadeiro: 'tentativas'
+Se o número de tentativas for maior que 1, a variável palavraTentativas será atribuída com o valor 'tentativas'.
+
+Valor se falso: 'tentativa'
+Se o número de tentativas for igual a 1, a variável palavraTentativas será atribuída com o valor 'tentativa'.
+
+**Como Funciona:**
+Depois que o usuário acerta o número secreto, o código exibe uma mensagem de parabéns com o número de tentativas. O operador ternário ajuda a decidir se a palavra "tentativa" ou "tentativas" será exibida de acordo com o número de tentativas feitas.
+
+**Por exemplo:**
+1- Se o usuário acertar o número secreto na primeira tentativa (tentativas = 1), a mensagem exibirá "1 tentativa".
+2- Se o usuário acertar o número secreto depois de mais de uma tentativa (tentativas > 1), a mensagem exibirá "X tentativas", onde X será o número de tentativas feitas.
+
+**Por que usar o operador ternário aqui?**
+O operador ternário é uma maneira mais concisa de escrever uma simples condição if-else:
+
+Se tentativas > 1, a palavra será 'tentativas'.
+Se não, a palavra será 'tentativa'.
+
+Em vez de escrever uma estrutura if-else mais longa, você consegue a mesma funcionalidade de forma compacta e legível.
