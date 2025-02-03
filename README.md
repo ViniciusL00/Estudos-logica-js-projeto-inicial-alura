@@ -93,7 +93,7 @@ Sempre que o chute for incorreto, maior ou menor que o número secreto, incremen
 4- O número de tentativas é contado em uma variável separada.
 
 **Exemplo:**  while {
-    let chute = prompt("Digite seu chute:");
+    let chute = prompt("Digite o numero secreto:");
     
     if (chute == numeroSecreto) {
         break; // Interrompe o loop se o usuário acertar o número secreto
