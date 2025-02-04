@@ -162,3 +162,13 @@ console.log(numero); // Exemplo de saída: 3 (número aleatório entre 1 e 10)
 1- Math.random() gera um número entre 0 e 1.
 2- Math.floor() arredonda para baixo, garantindo um número inteiro.
 3- O + 1 ajusta o intervalo para começar em 1.
+
+13- Decima terceira aula: Continuando com o uso de Math.random().
+**Objetivo:** Utilizar a função Math.random() para gerar números inteiros aleatórios.
+**Exemplo:** let numeroSecreto = parseInt(Math.random() * 15 + 1)
+Esse código é uma forma de gerar números inteiros aleatórios dentro do intervalo de 1 a 15.
+
+**Como funciona:** 1- Math.random() gera um número decimal aleatório entre 0 (inclusivo) e 1 (exclusivo).
+2- Ao multiplicar o valor retornado por Math.random() por 15, obtemos um número decimal entre 0 e 15 (exclusivo).
+3- Ao adicionar 1 ao resultado da multiplicação, o intervalo de valores passa a ser entre 1 e 16 (exclusivo).
+4- A função parseInt() é usada para converter o número decimal resultante em um número inteiro, descartando a parte decimal.
