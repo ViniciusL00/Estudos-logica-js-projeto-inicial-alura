@@ -191,3 +191,14 @@ Esse código é uma forma de gerar números inteiros aleatórios dentro do inter
 2- Ao multiplicar o valor retornado por Math.random() por 15, obtemos um número decimal entre 0 e 15 (exclusivo).
 3- Ao adicionar 1 ao resultado da multiplicação, o intervalo de valores passa a ser entre 1 e 16 (exclusivo).
 4- A função parseInt() é usada para converter o número decimal resultante em um número inteiro, descartando a parte decimal.
+
+14- Decima quarta aula: Número máximo.
+**Objetivo:** Definir o valor máximo que o número secreto pode ter.
+
+**Como funciona:** O número secreto será gerado aleatoriamente entre 1 e 100 (inclusive). Isso ocorre através da expressão parseInt(Math.random() * numeroMaximo + 1), onde Math.random() gera um valor aleatório entre 0 (inclusive) e 1 (exclusive). Multiplicando isso por numeroMaximo e somando 1, garantimos que o valor esteja entre 1 e 100.
+
+**Exemplo:** let numeroMaximo = 100;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
+
+while (chute != numeroSecreto) {
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);}.

@@ -1,12 +1,13 @@
 alert('Olá seja bem-vindo ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random() * 15 + 1)
+let numeroMaximo = 100;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log (numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // while / enquanto o chute não for igual ao numeroSecreto
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 15');
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
 
         // Desabilitando a funcão console.log
     console.log = function() {}; // Isso faz com que o console.log não mostre nada
