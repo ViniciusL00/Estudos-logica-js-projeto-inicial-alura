@@ -3,17 +3,22 @@ Este é um jogo simples de adivinhação, onde o usuário precisa tentar descobr
 
 1- Primeira aula: Introdução ao Projeto.
 **Objetivo:** Criar o esqueleto básico do jogo. - **Comando Inicial:** Exibir uma mensagem de boas-vindas ao jogador.
-alert('Olá, seja bem-vindo ao jogo do número secreto');
+
+**Exemplo:** alert('Olá, seja bem-vindo ao jogo do número secreto');
 
 2- Segunda Aula: Variáveis ​​e Entrada do Usuário.
 **Objetivo:** Criar variáveis ​​e coleta de entradas do usuário. - **Exemplo:** Definimos uma variável para o número secreto.
-**Exemplo:** let numeroSecreto = 8; 
+
+**Exemplo:** let numeroSecreto = 8;
+
 Coletamos a tentativa do usuário usando `prompt`.
 Executando um comando para encontrar o número secreto.
+
 **Exemplo:** let chute = prompt ('Escolha um número entre 1 a 15');
 
 3- Terceira aula: Condições e Comparação de Valores.
 **Objetivo:** Comparar valores e tomar ações com base na comparação.
+
 **Exemplo:** Se o chute do jogador for igual ao número secreto, mostramos uma mensagem de parabéns.
 **Exemplo:** if (chute == númeroSecreto) {
  console.log ('Parabéns, você acertou o número secreto (8))';
@@ -22,13 +27,16 @@ Executando um comando para encontrar o número secreto.
 
 4- Quarta aula: Uso do `else` e ​​`Comentários`.
 **Objetivo:** Else e comentarios.
+
 Melhorar a lógica de decisão com o uso do `else` e ​​adicionar `comentários`.
 else é uma palavra-chave que significa "senão" e é usada em conjunto com if para executar um bloco de código quando a condição do if for falsa.
+
 **Exemplo de `if/else`:** if (chute == numeroSecreto) { alert ('Parabéns você acertou o número secreto');} else { alert ('Você errou o número secreto, tente novamente');}
 **Comentários:** Comentários são usados ​​para facilitar a leitura do código para outros desenvolvedores e são ignorados pelo navegador.
 
 5- Quinta aula: Concatenação e Template Strings.
 **Objetivo:** Melhorar a formatação de mensagens com concatenação e template strings. 
+
 **Exemplo de Template String:** alert (`Parabéns você acertou o número secreto ${numeroSecreto}`);.
 Com o template strings, permite que você insira variáveis ​​diretamente na string, usando a sintaxe `${variavel}`.
 
@@ -45,6 +53,7 @@ com essa extensão instalada, você não precisa atualizar a página toda vez qu
 
 7- Sétima aula: Adicionando dicas de **"maior" ou "menor":** 
 **Objetivo:** Para melhorar a interação com o usuário, implementei uma condição que avisa se o chute foi maior ou menor que o número secreto.
+
 **Exemplo:** if (chute > numeroSecreto){
         alert(`O numero secreto é menor que ${chute}`);
     } else {
@@ -54,6 +63,7 @@ com essa extensão instalada, você não precisa atualizar a página toda vez qu
 8- Oitava aula: Estruturas de Repetição.
 **Objetivo:** Repetir a interação até o usuário acertar o número secreto. O objetivo desta parte do código é permitir que o usuário continue tentando acertar o número secreto.
 Para isso, utilizamos o **loop `while`**. que repete o processo de uma condição até acertar a verdadeira.
+
 **Exemplo:** while (chute != numeroSecreto) {
     chute = prompt('Escolha um número entre 1 e 15');
 }
@@ -71,20 +81,25 @@ A condição dentro do `while` verifica se o valor da variável `chute` é difer
 9- Nona aula: Tentativas.
 **Objetivo:** Mostrar ao usuario a quantidade de tentativas que ele teve até acertar o numeroSecreto, para isso utilizamos o operador `++` que incrementa o valor da variável `tentativas` em 1 a cada tentativa.
 **Como funciona:** - Cada vez que o usuário faz uma tentativa, o número de tentativas aumenta em 1 e é exibido na tela.
+
 **Exemplo:** `tentativas++;` ou `let tentativa = 1;` (caso queira iniciar com 1).
 **Onde adicionar o incremento de tentativas:** 1. - **Dentro do bloco `else`**.
 Sempre que o chute for incorreto, maior ou menor que o número secreto, incrementamos as tentativas.
+
 **Exemplo:** else {
                 alert(`O numero secreto é maior que ${chute}`);
             }
             **tentativas++;**
+            
 `tentativas++;` Também deve ser incrementado dentro do comando `if` no comando alert.
+
 **Exemplo:** if (chute == numeroSecreto) {
             alert (`Parabéns, você acertou o número secreto ${numeroSecreto}, com ${tentativas} tentativas!`);
 }
 
 10 - Decima aula: Break
 **Objetivo:** Quando o usuário acertar o número secreto na primeira tentativa, a mensagem de alerta deve indicar "1 tentativa" ao invés de "1 tentativas".
+
 **Como funciona:** Utilizamos o comando `break;` dentro do loop `while`, logo após a verificação da condição de acerto (caso o número chutado seja igual ao número secreto). O `break;` irá interromper o loop imediatamente assim que o acerto acontecer.
 
 **Passo a passo**: 1- Verifique se o chute do usuário é igual ao número secreto.
@@ -115,12 +130,14 @@ if (tentativas > 1) {
 }
 
 **Explicações importantes:** 1- O `break;` é utilizado dentro do loop while para parar a execução quando o número secreto for acertado.
+
 2- Fora do loop, usamos uma estrutura `if/else` para verificar o número de tentativas e exibir a mensagem correta, singular ou plural, de acordo com o número de tentativas realizadas.
 
 11- Decima primeira aula: Operador ternário.
 O operador ternário é uma forma compacta de escrever uma estrutura condicional if-else. Ele é usado para simplificar a escrita de condições simples, tornando o código mais conciso.
 **Objetivo:**
 O objetivo do operador ternário é fazer uma escolha entre dois valores com base em uma condição. Ele é útil quando você deseja realizar uma verificação simples e atribuir um valor a uma variável ou executar uma ação dependendo de um teste condicional.
+
 **Explicação:**
 Condição: tentativas > 1
 O operador ternário verifica se o número de tentativas (tentativas) é maior que 1.
@@ -156,7 +173,8 @@ console.log(numeroAleatorio); // Exemplo de saída: 0.374251925346938
 
 **Gerando números em um intervalo específico:**
 Para gerar um número aleatório dentro de um intervalo personalizado, como de 1 a 10, você pode fazer da seguinte forma:
-let numero = Math.floor(Math.random() * 10) + 1;
+
+**Exemplo:** let numero = Math.floor(Math.random() * 10) + 1;
 console.log(numero); // Exemplo de saída: 3 (número aleatório entre 1 e 10)
 
 1- Math.random() gera um número entre 0 e 1.
@@ -165,6 +183,7 @@ console.log(numero); // Exemplo de saída: 3 (número aleatório entre 1 e 10)
 
 13- Decima terceira aula: Continuando com o uso de Math.random().
 **Objetivo:** Utilizar a função Math.random() para gerar números inteiros aleatórios.
+
 **Exemplo:** let numeroSecreto = parseInt(Math.random() * 15 + 1)
 Esse código é uma forma de gerar números inteiros aleatórios dentro do intervalo de 1 a 15.
 
